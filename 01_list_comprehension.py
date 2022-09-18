@@ -6,8 +6,11 @@ text = "Call me Ishmael. Some years ago - never mind how long precisely - having
        " part of the world. It is a way I have of driving off the spleen, and regulating the circulation. - Moby Dick"
 
 lst_bigger_than_3 = [word for line in text.split('\\') for word in line.split() if len(word) > 3]
-lst_bigger_than_3_1 = [[word for word in line.split() if len(word) > 3] for line in text.split('\\')]
+
+# print(lst_bigger_than_3)
+
+# Read file
+print([line.strip() for line in open('text_test_file.txt')])
 
 
-print(lst_bigger_than_3)
-print(lst_bigger_than_3_1)
+
